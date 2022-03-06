@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="tema1_bun.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="baggage_drop.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="baggage_drop.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="baggage_drop.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="baggage_drop.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="baggage_drop.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="baggage_drop.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="baggage_drop.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="baggage_drop.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="baggage_drop_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="baggage_drop_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="baggage_drop_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="display_and_drop.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="display_and_drop.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="display_and_drop.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="display_and_drop.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="display_and_drop.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="display_and_drop.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="display_and_drop.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="display_and_drop.xst"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="display_and_drop_xst.xrpt"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="square_root.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="square_root.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="square_root.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="square_root.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="square_root.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="square_root.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="square_root.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="square_root.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="square_root_envsettings.html"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="square_root_summary.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="square_root_test_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="square_root_test_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="square_root_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1636477369" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1636477369">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1636477715" xil_pn:in_ck="-3205154058186906728" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1636477715">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="baggage_drop.v"/>
+      <outfile xil_pn:name="baggage_drop_test.v"/>
+      <outfile xil_pn:name="display_and_drop.v"/>
+      <outfile xil_pn:name="display_and_drop_test.v"/>
+      <outfile xil_pn:name="sensors_input.v"/>
+      <outfile xil_pn:name="sensors_input_test.v"/>
+      <outfile xil_pn:name="square_root.v"/>
+      <outfile xil_pn:name="square_root_test.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1636477369" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-3303237784129193718" xil_pn:start_ts="1636477369">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1636477369" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="933887264135062056" xil_pn:start_ts="1636477369">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1636477369" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-8020092824489719151" xil_pn:start_ts="1636477369">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+    </transform>
+    <transform xil_pn:end_ts="1636477715" xil_pn:in_ck="-3205154058186906728" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1636477715">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="baggage_drop.v"/>
+      <outfile xil_pn:name="baggage_drop_test.v"/>
+      <outfile xil_pn:name="display_and_drop.v"/>
+      <outfile xil_pn:name="display_and_drop_test.v"/>
+      <outfile xil_pn:name="sensors_input.v"/>
+      <outfile xil_pn:name="sensors_input_test.v"/>
+      <outfile xil_pn:name="square_root.v"/>
+      <outfile xil_pn:name="square_root_test.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1636477717" xil_pn:in_ck="-3205154058186906728" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="5129654148821546883" xil_pn:start_ts="1636477715">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+    <transform xil_pn:end_ts="1636477371" xil_pn:in_ck="-7863685194313261534" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="7534817102124870758" xil_pn:start_ts="1636477371">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForced"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="square_root_test_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1636478548" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1636478548">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1636479639" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-7420325577321730263" xil_pn:start_ts="1636479639">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1636479639" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-8020092824489719151" xil_pn:start_ts="1636479639">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1636479639" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1636479639">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1636479639" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="6657489297335542283" xil_pn:start_ts="1636479639">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1636479639" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="3206529612922900429" xil_pn:start_ts="1636479639">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1636479639" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="765872751916828891" xil_pn:start_ts="1636479639">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1636802123" xil_pn:in_ck="-8598999184820818610" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="8349174345884893870" xil_pn:start_ts="1636802111">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="square_root.lso"/>
+      <outfile xil_pn:name="square_root.ngc"/>
+      <outfile xil_pn:name="square_root.ngr"/>
+      <outfile xil_pn:name="square_root.prj"/>
+      <outfile xil_pn:name="square_root.stx"/>
+      <outfile xil_pn:name="square_root.syr"/>
+      <outfile xil_pn:name="square_root.xst"/>
+      <outfile xil_pn:name="square_root_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+  </transforms>
+
+</generated_project>

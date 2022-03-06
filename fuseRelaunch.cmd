@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Facultate anu 3 sem 1/AC/tema1_bun/tema1_bun/square_root_test_isim_beh.exe" -prj "D:/Facultate anu 3 sem 1/AC/tema1_bun/tema1_bun/square_root_test_beh.prj" "work.square_root_test" "work.glbl" 

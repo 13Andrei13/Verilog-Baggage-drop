@@ -1,0 +1,914 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: baggage_drop.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "baggage_drop.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "baggage_drop"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : baggage_drop
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Facultate anu 3 sem 1\AC\tema1_bun\tema1_bun\square_root.v" into library work
+Parsing module <square_root>.
+Analyzing Verilog file "D:\Facultate anu 3 sem 1\AC\tema1_bun\tema1_bun\sensors_input.v" into library work
+Parsing module <sensors_input>.
+Analyzing Verilog file "D:\Facultate anu 3 sem 1\AC\tema1_bun\tema1_bun\display_and_drop.v" into library work
+Parsing module <display_and_drop>.
+Analyzing Verilog file "D:\Facultate anu 3 sem 1\AC\tema1_bun\tema1_bun\baggage_drop.v" into library work
+Parsing module <baggage_drop>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <baggage_drop>.
+
+Elaborating module <sensors_input>.
+WARNING:HDLCompiler:413 - "D:\Facultate anu 3 sem 1\AC\tema1_bun\tema1_bun\sensors_input.v" Line 34: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "D:\Facultate anu 3 sem 1\AC\tema1_bun\tema1_bun\sensors_input.v" Line 37: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "D:\Facultate anu 3 sem 1\AC\tema1_bun\tema1_bun\sensors_input.v" Line 44: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "D:\Facultate anu 3 sem 1\AC\tema1_bun\tema1_bun\sensors_input.v" Line 52: Result of 9-bit expression is truncated to fit in 8-bit target.
+
+Elaborating module <square_root>.
+
+Elaborating module <display_and_drop>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <baggage_drop>.
+    Related source file is "D:\Facultate anu 3 sem 1\AC\tema1_bun\tema1_bun\baggage_drop.v".
+    Summary:
+	no macro.
+Unit <baggage_drop> synthesized.
+
+Synthesizing Unit <sensors_input>.
+    Related source file is "D:\Facultate anu 3 sem 1\AC\tema1_bun\tema1_bun\sensors_input.v".
+    Found 9-bit adder for signal <n0099[8:0]> created at line 34.
+    Found 8-bit adder for signal <n0109> created at line 35.
+    Found 8-bit adder for signal <n0071> created at line 35.
+    Found 8-bit adder for signal <BUS_0002_GND_2_o_add_12_OUT> created at line 37.
+    Found 9-bit adder for signal <n0116> created at line 41.
+    Found 8-bit adder for signal <BUS_0008_GND_2_o_add_19_OUT> created at line 44.
+    Found 9-bit adder for signal <n0121> created at line 49.
+    Found 8-bit adder for signal <BUS_0011_GND_2_o_add_26_OUT> created at line 52.
+    Found 10-bit adder for signal <_n0152> created at line 34.
+    Found 10-bit adder for signal <n0069> created at line 34.
+WARNING:Xst:737 - Found 1-bit latch for signal <height_result<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <height_result<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <height_result<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <height_result<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <height_result<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <height_result<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <height_result<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <height_result<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred  10 Adder/Subtractor(s).
+	inferred   8 Latch(s).
+	inferred  19 Multiplexer(s).
+Unit <sensors_input> synthesized.
+
+Synthesizing Unit <square_root>.
+    Related source file is "D:\Facultate anu 3 sem 1\AC\tema1_bun\tema1_bun\square_root.v".
+    Found 64-bit subtractor for signal <GND_11_o_GND_11_o_sub_6_OUT> created at line 41.
+    Found 64-bit subtractor for signal <GND_11_o_GND_11_o_sub_11_OUT> created at line 41.
+    Found 64-bit subtractor for signal <GND_11_o_GND_11_o_sub_16_OUT> created at line 41.
+    Found 64-bit subtractor for signal <GND_11_o_GND_11_o_sub_21_OUT> created at line 41.
+    Found 64-bit subtractor for signal <GND_11_o_GND_11_o_sub_26_OUT> created at line 41.
+    Found 64-bit subtractor for signal <GND_11_o_GND_11_o_sub_31_OUT> created at line 41.
+    Found 64-bit subtractor for signal <GND_11_o_GND_11_o_sub_36_OUT> created at line 41.
+    Found 64-bit subtractor for signal <GND_11_o_GND_11_o_sub_41_OUT> created at line 41.
+    Found 64-bit subtractor for signal <GND_11_o_GND_11_o_sub_46_OUT> created at line 41.
+    Found 64-bit subtractor for signal <GND_11_o_GND_11_o_sub_51_OUT> created at line 41.
+    Found 64-bit subtractor for signal <GND_11_o_GND_11_o_sub_56_OUT> created at line 41.
+    Found 64-bit subtractor for signal <GND_11_o_GND_11_o_sub_61_OUT> created at line 41.
+    Found 64-bit subtractor for signal <GND_11_o_GND_11_o_sub_66_OUT> created at line 41.
+    Found 64-bit subtractor for signal <GND_11_o_GND_11_o_sub_71_OUT> created at line 41.
+    Found 64-bit subtractor for signal <GND_11_o_GND_11_o_sub_76_OUT> created at line 41.
+    Found 64-bit subtractor for signal <GND_11_o_GND_11_o_sub_81_OUT> created at line 41.
+    Found 64-bit subtractor for signal <GND_11_o_GND_11_o_sub_86_OUT> created at line 41.
+    Found 64-bit subtractor for signal <GND_11_o_GND_11_o_sub_91_OUT> created at line 41.
+    Found 64-bit adder for signal <GND_11_o_GND_11_o_add_2_OUT> created at line 39.
+    Found 64-bit adder for signal <GND_11_o_GND_11_o_add_7_OUT> created at line 39.
+    Found 64-bit adder for signal <GND_11_o_GND_11_o_add_12_OUT> created at line 39.
+    Found 64-bit adder for signal <GND_11_o_GND_11_o_add_17_OUT> created at line 39.
+    Found 64-bit adder for signal <GND_11_o_GND_11_o_add_22_OUT> created at line 39.
+    Found 64-bit adder for signal <GND_11_o_GND_11_o_add_27_OUT> created at line 39.
+    Found 64-bit adder for signal <GND_11_o_GND_11_o_add_32_OUT> created at line 39.
+    Found 64-bit adder for signal <GND_11_o_GND_11_o_add_37_OUT> created at line 39.
+    Found 64-bit adder for signal <GND_11_o_GND_11_o_add_42_OUT> created at line 39.
+    Found 64-bit adder for signal <GND_11_o_GND_11_o_add_47_OUT> created at line 39.
+    Found 64-bit adder for signal <GND_11_o_GND_11_o_add_52_OUT> created at line 39.
+    Found 64-bit adder for signal <GND_11_o_GND_11_o_add_57_OUT> created at line 39.
+    Found 64-bit adder for signal <GND_11_o_GND_11_o_add_62_OUT> created at line 39.
+    Found 64-bit adder for signal <GND_11_o_GND_11_o_add_67_OUT> created at line 39.
+    Found 64-bit adder for signal <GND_11_o_GND_11_o_add_72_OUT> created at line 39.
+    Found 64-bit adder for signal <GND_11_o_GND_11_o_add_77_OUT> created at line 39.
+    Found 64-bit adder for signal <GND_11_o_GND_11_o_add_82_OUT> created at line 39.
+    Found 64-bit adder for signal <GND_11_o_GND_11_o_add_87_OUT> created at line 39.
+    Found 64x64-bit multiplier for signal <n0226> created at line 40.
+    Found 64x64-bit multiplier for signal <n0230> created at line 40.
+    Found 64x64-bit multiplier for signal <n0234> created at line 40.
+    Found 64x64-bit multiplier for signal <n0238> created at line 40.
+    Found 64x64-bit multiplier for signal <n0242> created at line 40.
+    Found 64x64-bit multiplier for signal <n0246> created at line 40.
+    Found 64x64-bit multiplier for signal <n0250> created at line 40.
+    Found 64x64-bit multiplier for signal <n0254> created at line 40.
+    Found 64x64-bit multiplier for signal <n0258> created at line 40.
+    Found 64x64-bit multiplier for signal <n0262> created at line 40.
+    Found 64x64-bit multiplier for signal <n0266> created at line 40.
+    Found 64x64-bit multiplier for signal <n0270> created at line 40.
+    Found 64x64-bit multiplier for signal <n0274> created at line 40.
+    Found 64x64-bit multiplier for signal <n0278> created at line 40.
+    Found 64x64-bit multiplier for signal <n0282> created at line 40.
+    Found 64x64-bit multiplier for signal <n0286> created at line 40.
+    Found 64x64-bit multiplier for signal <n0290> created at line 40.
+    Found 64x64-bit multiplier for signal <n0294> created at line 40.
+    Found 38-bit comparator greater for signal <in[7]_GND_11_o_LessThan_1_o> created at line 40
+    Found 64-bit comparator greater for signal <GND_11_o_GND_11_o_LessThan_5_o> created at line 40
+    Found 64-bit comparator greater for signal <GND_11_o_GND_11_o_LessThan_10_o> created at line 40
+    Found 64-bit comparator greater for signal <GND_11_o_GND_11_o_LessThan_15_o> created at line 40
+    Found 64-bit comparator greater for signal <GND_11_o_GND_11_o_LessThan_20_o> created at line 40
+    Found 64-bit comparator greater for signal <GND_11_o_GND_11_o_LessThan_25_o> created at line 40
+    Found 64-bit comparator greater for signal <GND_11_o_GND_11_o_LessThan_30_o> created at line 40
+    Found 64-bit comparator greater for signal <GND_11_o_GND_11_o_LessThan_35_o> created at line 40
+    Found 64-bit comparator greater for signal <GND_11_o_GND_11_o_LessThan_40_o> created at line 40
+    Found 64-bit comparator greater for signal <GND_11_o_GND_11_o_LessThan_45_o> created at line 40
+    Found 64-bit comparator greater for signal <GND_11_o_GND_11_o_LessThan_50_o> created at line 40
+    Found 64-bit comparator greater for signal <GND_11_o_GND_11_o_LessThan_55_o> created at line 40
+    Found 64-bit comparator greater for signal <GND_11_o_GND_11_o_LessThan_60_o> created at line 40
+    Found 64-bit comparator greater for signal <GND_11_o_GND_11_o_LessThan_65_o> created at line 40
+    Found 64-bit comparator greater for signal <GND_11_o_GND_11_o_LessThan_70_o> created at line 40
+    Found 64-bit comparator greater for signal <GND_11_o_GND_11_o_LessThan_75_o> created at line 40
+    Found 64-bit comparator greater for signal <GND_11_o_GND_11_o_LessThan_80_o> created at line 40
+    Found 64-bit comparator greater for signal <GND_11_o_GND_11_o_LessThan_85_o> created at line 40
+    Found 64-bit comparator greater for signal <GND_11_o_GND_11_o_LessThan_90_o> created at line 40
+    Summary:
+	inferred  18 Multiplier(s).
+	inferred  36 Adder/Subtractor(s).
+	inferred  19 Comparator(s).
+	inferred  18 Multiplexer(s).
+Unit <square_root> synthesized.
+
+Synthesizing Unit <display_and_drop>.
+    Related source file is "D:\Facultate anu 3 sem 1\AC\tema1_bun\tema1_bun\display_and_drop.v".
+WARNING:Xst:737 - Found 1-bit latch for signal <drop_status>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <first_letter<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <first_letter<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <second_letter<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <second_letter<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <third_letter<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 16-bit comparator greater for signal <n0001> created at line 39
+    Summary:
+	inferred   6 Latch(s).
+	inferred   1 Comparator(s).
+	inferred   4 Multiplexer(s).
+Unit <display_and_drop> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 18
+ 64x64-bit multiplier                                  : 18
+# Adders/Subtractors                                   : 46
+ 10-bit adder                                          : 2
+ 64-bit adder                                          : 18
+ 64-bit subtractor                                     : 18
+ 8-bit adder                                           : 5
+ 9-bit adder                                           : 3
+# Latches                                              : 14
+ 1-bit latch                                           : 14
+# Comparators                                          : 20
+ 16-bit comparator greater                             : 1
+ 38-bit comparator greater                             : 1
+ 64-bit comparator greater                             : 18
+# Multiplexers                                         : 41
+ 1-bit 2-to-1 multiplexer                              : 20
+ 64-bit 2-to-1 multiplexer                             : 18
+ 8-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 18
+ 64x64-bit multiplier                                  : 18
+# Adders/Subtractors                                   : 46
+ 10-bit adder                                          : 2
+ 2-bit adder                                           : 2
+ 64-bit adder                                          : 18
+ 64-bit subtractor                                     : 18
+ 8-bit adder                                           : 3
+ 9-bit adder                                           : 3
+# Comparators                                          : 20
+ 16-bit comparator greater                             : 1
+ 38-bit comparator greater                             : 1
+ 64-bit comparator greater                             : 18
+# Multiplexers                                         : 41
+ 1-bit 2-to-1 multiplexer                              : 20
+ 64-bit 2-to-1 multiplexer                             : 18
+ 8-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <Mmult_n0226_submult_13> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0226_submult_3> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0226_submult_31> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0230_submult_3> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0230_submult_31> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0230_submult_13> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0234_submult_3> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0234_submult_31> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0234_submult_13> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0238_submult_13> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0238_submult_3> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0238_submult_31> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0242_submult_13> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0242_submult_3> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0242_submult_31> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0246_submult_13> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0246_submult_3> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0246_submult_31> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0250_submult_13> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0250_submult_3> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0250_submult_31> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0254_submult_13> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0254_submult_3> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0254_submult_31> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0258_submult_13> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0258_submult_3> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0258_submult_31> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0262_submult_3> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0262_submult_31> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0262_submult_13> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0266_submult_13> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0266_submult_3> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0266_submult_31> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0270_submult_13> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0270_submult_3> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0270_submult_31> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0274_submult_13> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0274_submult_3> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0274_submult_31> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0278_submult_13> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0278_submult_3> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0278_submult_31> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0282_submult_13> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0282_submult_3> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0282_submult_31> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0286_submult_13> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0286_submult_3> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0286_submult_31> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0290_submult_3> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0290_submult_31> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0290_submult_13> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0294_submult_3> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0294_submult_31> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0294_submult_13> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0270_submult_2> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0270_submult_21> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0270_submult_0> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0270_submult_01> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0270_submult_02> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0270_submult_03> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0270_submult_1> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0270_submult_11> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0270_submult_12> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0274_submult_2> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0274_submult_21> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0274_submult_0> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0274_submult_01> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0274_submult_02> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0274_submult_03> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0274_submult_1> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0274_submult_11> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0274_submult_12> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0278_submult_2> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0278_submult_21> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0278_submult_0> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0278_submult_01> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0278_submult_02> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0278_submult_03> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0278_submult_1> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0278_submult_11> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0278_submult_12> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0282_submult_0> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0282_submult_01> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0282_submult_02> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0282_submult_03> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0282_submult_1> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0282_submult_11> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0282_submult_12> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0282_submult_2> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0282_submult_21> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0286_submult_1> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0286_submult_11> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0286_submult_12> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0286_submult_0> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0286_submult_01> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0286_submult_02> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0286_submult_03> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0286_submult_2> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0286_submult_21> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0290_submult_0> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0290_submult_01> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0290_submult_02> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0290_submult_03> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0290_submult_1> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0290_submult_11> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0290_submult_12> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0290_submult_2> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0290_submult_21> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0294_submult_0> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0294_submult_01> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0294_submult_02> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0294_submult_03> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0294_submult_1> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0294_submult_11> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0294_submult_12> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0294_submult_2> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:2677 - Node <Mmult_n0294_submult_21> of sequential type is unconnected in block <square_root>.
+WARNING:Xst:3001 - This design contains one or more registers or latches with an active
+   asynchronous set and asynchronous reset. While this circuit can be built,
+   it creates a sub-optimal implementation in terms of area, power and
+   performance. For a more optimal implementation Xilinx highly recommends
+   one of the following:
+
+          1) Remove either the set or reset from all registers and latches if
+             not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Artix7 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    first_letter_4 in unit <display_and_drop>
+    first_letter_5 in unit <display_and_drop>
+    second_letter_5 in unit <display_and_drop>
+    second_letter_2 in unit <display_and_drop>
+    third_letter_6 in unit <display_and_drop>
+    drop_status in unit <display_and_drop>
+
+
+Optimizing unit <baggage_drop> ...
+
+Optimizing unit <sensors_input> ...
+WARNING:Xst:1294 - Latch <height_result_6> is equivalent to a wire in block <sensors_input>.
+WARNING:Xst:1294 - Latch <height_result_5> is equivalent to a wire in block <sensors_input>.
+WARNING:Xst:1294 - Latch <height_result_2> is equivalent to a wire in block <sensors_input>.
+WARNING:Xst:1294 - Latch <height_result_4> is equivalent to a wire in block <sensors_input>.
+WARNING:Xst:1294 - Latch <height_result_3> is equivalent to a wire in block <sensors_input>.
+WARNING:Xst:1294 - Latch <height_result_1> is equivalent to a wire in block <sensors_input>.
+WARNING:Xst:1294 - Latch <height_result_0> is equivalent to a wire in block <sensors_input>.
+WARNING:Xst:1294 - Latch <height_result_7> is equivalent to a wire in block <sensors_input>.
+
+Optimizing unit <display_and_drop> ...
+
+Optimizing unit <square_root> ...
+WARNING:Xst:2677 - Node <radi/Mmult_n0266_submult_21> of sequential type is unconnected in block <baggage_drop>.
+WARNING:Xst:2677 - Node <radi/Mmult_n0266_submult_2> of sequential type is unconnected in block <baggage_drop>.
+WARNING:Xst:2677 - Node <radi/Mmult_n0266_submult_12> of sequential type is unconnected in block <baggage_drop>.
+WARNING:Xst:2677 - Node <radi/Mmult_n0266_submult_11> of sequential type is unconnected in block <baggage_drop>.
+WARNING:Xst:2677 - Node <radi/Mmult_n0266_submult_1> of sequential type is unconnected in block <baggage_drop>.
+WARNING:Xst:2677 - Node <radi/Mmult_n0266_submult_03> of sequential type is unconnected in block <baggage_drop>.
+WARNING:Xst:2677 - Node <radi/Mmult_n0266_submult_02> of sequential type is unconnected in block <baggage_drop>.
+WARNING:Xst:2677 - Node <radi/Mmult_n0266_submult_01> of sequential type is unconnected in block <baggage_drop>.
+WARNING:Xst:2677 - Node <radi/Mmult_n0266_submult_0> of sequential type is unconnected in block <baggage_drop>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block baggage_drop, actual ratio is 1.
+Latch disp/drop_status has been replicated 4 time(s) to handle iob=true attribute.
+Latch disp/first_letter_5 has been replicated 4 time(s) to handle iob=true attribute.
+Latch disp/first_letter_4 has been replicated 2 time(s) to handle iob=true attribute.
+Latch disp/second_letter_5 has been replicated 1 time(s) to handle iob=true attribute.
+Latch disp/second_letter_2 has been replicated 1 time(s) to handle iob=true attribute.
+Latch disp/third_letter_6 has been replicated 2 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : baggage_drop.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2106
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 561
+#      LUT3                        : 31
+#      LUT4                        : 90
+#      LUT5                        : 135
+#      LUT6                        : 17
+#      MUXCY                       : 700
+#      MUXF7                       : 7
+#      VCC                         : 1
+#      XORCY                       : 562
+# FlipFlops/Latches                : 28
+#      LD                          : 28
+# IO Buffers                       : 78
+#      IBUF                        : 49
+#      OBUF                        : 29
+# DSPs                             : 90
+#      DSP48E1                     : 90
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:               8  out of  126800     0%  
+ Number of Slice LUTs:                  835  out of  63400     1%  
+    Number used as Logic:               835  out of  63400     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    835
+   Number with an unused Flip Flop:     827  out of    835    99%  
+   Number with an unused LUT:             0  out of    835     0%  
+   Number of fully used LUT-FF pairs:     8  out of    835     0%  
+   Number of unique control sets:         7
+
+IO Utilization: 
+ Number of IOs:                          78
+ Number of bonded IOBs:                  78  out of    210    37%  
+    IOB Flip Flops/Latches:              20
+
+Specific Feature Utilization:
+ Number of DSP48E1s:                     90  out of    240    37%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------------------+------------------------------+-------+
+Clock Signal                                    | Clock buffer(FF name)        | Load  |
+------------------------------------------------+------------------------------+-------+
+seven_seg2_6_OBUF                               | NONE(sensor/height_result_7) | 8     |
+disp/first_letter_4_G(disp/first_letter_4_G:O)  | NONE(*)(disp/first_letter_4) | 3     |
+disp/first_letter_5_G(disp/first_letter_5_G:O)  | NONE(*)(disp/first_letter_5) | 5     |
+disp/second_letter_5_G(disp/second_letter_5_G:O)| NONE(*)(disp/second_letter_5)| 2     |
+disp/second_letter_2_G(disp/second_letter_2_G:O)| NONE(*)(disp/second_letter_2)| 2     |
+disp/third_letter_6_G(disp/third_letter_6_G:O)  | NONE(*)(disp/third_letter_6) | 3     |
+disp/drop_status_G(disp/drop_status_G:O)        | NONE(*)(disp/drop_status)    | 5     |
+------------------------------------------------+------------------------------+-------+
+(*) These 6 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 2.653ns
+   Maximum output required time after clock: 0.751ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'disp/first_letter_4_G'
+  Total number of paths / destination ports: 186 / 3
+-------------------------------------------------------------------------
+Offset:              2.521ns (Levels of Logic = 11)
+  Source:            t_lim<1> (PAD)
+  Destination:       disp/first_letter_4 (LATCH)
+  Destination Clock: disp/first_letter_4_G falling
+
+  Data Path: t_lim<1> to disp/first_letter_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.001   0.561  t_lim_1_IBUF (t_lim_1_IBUF)
+     LUT4:I0->O            0   0.097   0.000  disp/Mcompar_n0001_lutdi (disp/Mcompar_n0001_lutdi)
+     MUXCY:DI->O           1   0.337   0.000  disp/Mcompar_n0001_cy<0> (disp/Mcompar_n0001_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  disp/Mcompar_n0001_cy<1> (disp/Mcompar_n0001_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  disp/Mcompar_n0001_cy<2> (disp/Mcompar_n0001_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  disp/Mcompar_n0001_cy<3> (disp/Mcompar_n0001_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  disp/Mcompar_n0001_cy<4> (disp/Mcompar_n0001_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  disp/Mcompar_n0001_cy<5> (disp/Mcompar_n0001_cy<5>)
+     MUXCY:CI->O           4   0.253   0.570  disp/Mcompar_n0001_cy<6> (disp/Mcompar_n0001_cy<6>)
+     LUT4:I0->O            4   0.097   0.393  disp/GND_13_o_PWR_5_o_AND_4121_o1 (disp/GND_13_o_PWR_5_o_AND_4121_o)
+     LUT3:I1->O            3   0.097   0.000  disp/first_letter_4_D (disp/first_letter_4_D)
+     LD:D                     -0.028          disp/first_letter_4
+    ----------------------------------------
+    Total                      2.521ns (0.997ns logic, 1.524ns route)
+                                       (39.5% logic, 60.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'disp/first_letter_5_G'
+  Total number of paths / destination ports: 10 / 5
+-------------------------------------------------------------------------
+Offset:              0.921ns (Levels of Logic = 3)
+  Source:            drop_en (PAD)
+  Destination:       disp/first_letter_5 (LATCH)
+  Destination Clock: disp/first_letter_5_G falling
+
+  Data Path: drop_en to disp/first_letter_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   0.001   0.316  drop_en_IBUF (drop_en_IBUF)
+     INV:I->O              4   0.113   0.393  disp/GND_13_o_PWR_5_o_AND_4133_o1_INV_0 (disp/GND_13_o_PWR_5_o_AND_4133_o)
+     LUT3:I1->O            5   0.097   0.000  disp/first_letter_5_D (disp/first_letter_5_D)
+     LD:D                     -0.028          disp/first_letter_5
+    ----------------------------------------
+    Total                      0.921ns (0.211ns logic, 0.710ns route)
+                                       (22.9% logic, 77.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'disp/second_letter_5_G'
+  Total number of paths / destination ports: 124 / 2
+-------------------------------------------------------------------------
+Offset:              2.653ns (Levels of Logic = 11)
+  Source:            t_lim<1> (PAD)
+  Destination:       disp/second_letter_5 (LATCH)
+  Destination Clock: disp/second_letter_5_G falling
+
+  Data Path: t_lim<1> to disp/second_letter_5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.001   0.561  t_lim_1_IBUF (t_lim_1_IBUF)
+     LUT4:I0->O            0   0.097   0.000  disp/Mcompar_n0001_lutdi (disp/Mcompar_n0001_lutdi)
+     MUXCY:DI->O           1   0.337   0.000  disp/Mcompar_n0001_cy<0> (disp/Mcompar_n0001_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  disp/Mcompar_n0001_cy<1> (disp/Mcompar_n0001_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  disp/Mcompar_n0001_cy<2> (disp/Mcompar_n0001_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  disp/Mcompar_n0001_cy<3> (disp/Mcompar_n0001_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  disp/Mcompar_n0001_cy<4> (disp/Mcompar_n0001_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  disp/Mcompar_n0001_cy<5> (disp/Mcompar_n0001_cy<5>)
+     MUXCY:CI->O           4   0.253   0.570  disp/Mcompar_n0001_cy<6> (disp/Mcompar_n0001_cy<6>)
+     LUT4:I0->O            4   0.097   0.525  disp/GND_13_o_PWR_5_o_AND_4121_o1 (disp/GND_13_o_PWR_5_o_AND_4121_o)
+     LUT3:I0->O            2   0.097   0.000  disp/second_letter_5_D (disp/second_letter_5_D)
+     LD:D                     -0.028          disp/second_letter_5
+    ----------------------------------------
+    Total                      2.653ns (0.997ns logic, 1.656ns route)
+                                       (37.6% logic, 62.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'disp/second_letter_2_G'
+  Total number of paths / destination ports: 124 / 2
+-------------------------------------------------------------------------
+Offset:              2.392ns (Levels of Logic = 11)
+  Source:            t_lim<1> (PAD)
+  Destination:       disp/second_letter_2 (LATCH)
+  Destination Clock: disp/second_letter_2_G falling
+
+  Data Path: t_lim<1> to disp/second_letter_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.001   0.560  t_lim_1_IBUF (t_lim_1_IBUF)
+     LUT4:I0->O            0   0.097   0.000  disp/Mcompar_n0001_lutdi (disp/Mcompar_n0001_lutdi)
+     MUXCY:DI->O           1   0.337   0.000  disp/Mcompar_n0001_cy<0> (disp/Mcompar_n0001_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  disp/Mcompar_n0001_cy<1> (disp/Mcompar_n0001_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  disp/Mcompar_n0001_cy<2> (disp/Mcompar_n0001_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  disp/Mcompar_n0001_cy<3> (disp/Mcompar_n0001_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  disp/Mcompar_n0001_cy<4> (disp/Mcompar_n0001_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  disp/Mcompar_n0001_cy<5> (disp/Mcompar_n0001_cy<5>)
+     MUXCY:CI->O           4   0.253   0.309  disp/Mcompar_n0001_cy<6> (disp/Mcompar_n0001_cy<6>)
+     LUT4:I3->O            4   0.097   0.525  disp/GND_13_o_t_act[15]_AND_4100_o1 (disp/GND_13_o_t_act[15]_AND_4100_o)
+     LUT3:I0->O            2   0.097   0.000  disp/second_letter_2_D (disp/second_letter_2_D)
+     LD:D                     -0.028          disp/second_letter_2
+    ----------------------------------------
+    Total                      2.392ns (0.997ns logic, 1.395ns route)
+                                       (41.7% logic, 58.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'disp/third_letter_6_G'
+  Total number of paths / destination ports: 6 / 3
+-------------------------------------------------------------------------
+Offset:              1.053ns (Levels of Logic = 3)
+  Source:            drop_en (PAD)
+  Destination:       disp/third_letter_6 (LATCH)
+  Destination Clock: disp/third_letter_6_G falling
+
+  Data Path: drop_en to disp/third_letter_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             9   0.001   0.316  drop_en_IBUF (drop_en_IBUF)
+     INV:I->O              4   0.113   0.525  disp/GND_13_o_PWR_5_o_AND_4133_o1_INV_0 (disp/GND_13_o_PWR_5_o_AND_4133_o)
+     LUT3:I0->O            3   0.097   0.000  disp/third_letter_6_D (disp/third_letter_6_D)
+     LD:D                     -0.028          disp/third_letter_6
+    ----------------------------------------
+    Total                      1.053ns (0.211ns logic, 0.842ns route)
+                                       (20.0% logic, 80.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'disp/drop_status_G'
+  Total number of paths / destination ports: 310 / 5
+-------------------------------------------------------------------------
+Offset:              2.476ns (Levels of Logic = 11)
+  Source:            t_lim<1> (PAD)
+  Destination:       disp/drop_status (LATCH)
+  Destination Clock: disp/drop_status_G falling
+
+  Data Path: t_lim<1> to disp/drop_status
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   0.001   0.561  t_lim_1_IBUF (t_lim_1_IBUF)
+     LUT4:I0->O            0   0.097   0.000  disp/Mcompar_n0001_lutdi (disp/Mcompar_n0001_lutdi)
+     MUXCY:DI->O           1   0.337   0.000  disp/Mcompar_n0001_cy<0> (disp/Mcompar_n0001_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  disp/Mcompar_n0001_cy<1> (disp/Mcompar_n0001_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  disp/Mcompar_n0001_cy<2> (disp/Mcompar_n0001_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  disp/Mcompar_n0001_cy<3> (disp/Mcompar_n0001_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  disp/Mcompar_n0001_cy<4> (disp/Mcompar_n0001_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  disp/Mcompar_n0001_cy<5> (disp/Mcompar_n0001_cy<5>)
+     MUXCY:CI->O           4   0.253   0.393  disp/Mcompar_n0001_cy<6> (disp/Mcompar_n0001_cy<6>)
+     LUT4:I2->O            4   0.097   0.525  disp/GND_13_o_GND_13_o_AND_4103_o1 (disp/GND_13_o_GND_13_o_AND_4103_o)
+     LUT3:I0->O            5   0.097   0.000  disp/drop_status_D (disp/drop_status_D)
+     LD:D                     -0.028          disp/drop_status
+    ----------------------------------------
+    Total                      2.476ns (0.997ns logic, 1.479ns route)
+                                       (40.3% logic, 59.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'disp/drop_status_G'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            disp/drop_status_1 (LATCH)
+  Destination:       seven_seg1<6> (PAD)
+  Source Clock:      disp/drop_status_G falling
+
+  Data Path: disp/drop_status_1 to seven_seg1<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  disp/drop_status_1 (disp/drop_status_1)
+     OBUF:I->O                 0.000          seven_seg1_6_OBUF (seven_seg1<6>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'disp/first_letter_5_G'
+  Total number of paths / destination ports: 5 / 5
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            disp/first_letter_5_1 (LATCH)
+  Destination:       seven_seg1<5> (PAD)
+  Source Clock:      disp/first_letter_5_G falling
+
+  Data Path: disp/first_letter_5_1 to seven_seg1<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  disp/first_letter_5_1 (disp/first_letter_5_1)
+     OBUF:I->O                 0.000          seven_seg1_5_OBUF (seven_seg1<5>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'disp/first_letter_4_G'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            disp/first_letter_4_1 (LATCH)
+  Destination:       seven_seg1<4> (PAD)
+  Source Clock:      disp/first_letter_4_G falling
+
+  Data Path: disp/first_letter_4_1 to seven_seg1<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  disp/first_letter_4_1 (disp/first_letter_4_1)
+     OBUF:I->O                 0.000          seven_seg1_4_OBUF (seven_seg1<4>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'disp/second_letter_5_G'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            disp/second_letter_5_1 (LATCH)
+  Destination:       seven_seg2<5> (PAD)
+  Source Clock:      disp/second_letter_5_G falling
+
+  Data Path: disp/second_letter_5_1 to seven_seg2<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  disp/second_letter_5_1 (disp/second_letter_5_1)
+     OBUF:I->O                 0.000          seven_seg2_5_OBUF (seven_seg2<5>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'disp/second_letter_2_G'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            disp/second_letter_2_1 (LATCH)
+  Destination:       seven_seg2<2> (PAD)
+  Source Clock:      disp/second_letter_2_G falling
+
+  Data Path: disp/second_letter_2_1 to seven_seg2<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  disp/second_letter_2_1 (disp/second_letter_2_1)
+     OBUF:I->O                 0.000          seven_seg2_2_OBUF (seven_seg2<2>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'disp/third_letter_6_G'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              0.751ns (Levels of Logic = 1)
+  Source:            disp/third_letter_6_1 (LATCH)
+  Destination:       seven_seg3<6> (PAD)
+  Source Clock:      disp/third_letter_6_G falling
+
+  Data Path: disp/third_letter_6_1 to seven_seg3<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.472   0.279  disp/third_letter_6_1 (disp/third_letter_6_1)
+     OBUF:I->O                 0.000          seven_seg3_6_OBUF (seven_seg3<6>)
+    ----------------------------------------
+    Total                      0.751ns (0.472ns logic, 0.279ns route)
+                                       (62.8% logic, 37.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 17.60 secs
+ 
+--> 
+
+Total memory usage is 4674056 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  153 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+
